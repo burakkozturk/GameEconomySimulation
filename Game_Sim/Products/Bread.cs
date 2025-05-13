@@ -9,5 +9,4 @@ public class Bread : Product
     public override double Volume => 0.25;
     public override bool IsPerishable => true;
     public override int ShelfLifeDays => 3;
-    public override double BasePrice => 4.0;
 }

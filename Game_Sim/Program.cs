@@ -1,18 +1,52 @@
 ﻿using Game_Sim.Model;
 using Game_Sim.Products;
 using Game_Sim.World.Processors;
+using Game_Sim.World.Producers;
 
 class Program
 {
     static void Main(string[] args)
     {
+        // Create cities
+        var cityA = new CityA();
+        var cityB = new CityB();
+
+        // Create producers
+        var dairyA = new DairyA();
+        var mineA = new MineA();
+        var dairyB = new DairyB();
+
+        // Add producers to cities
+        cityA.AddProducer(dairyA);
+        cityB.AddProducer(mineA);
+        cityB.AddProducer(dairyB);
+
+        // Display city information
+        Console.WriteLine("==== Cities Status ====");
+        cityA.DisplayStatus();
+        Console.WriteLine();
+        cityB.DisplayStatus();
+
+        Console.WriteLine("\n==== Producers Information ====");
+        dairyA.DisplayProductionInfo();
+        Console.WriteLine();
+        mineA.DisplayProductionInfo();
+        Console.WriteLine();
+        dairyB.DisplayProductionInfo();
+
+        // Demonstrate processor functionality
+        Console.WriteLine("\n==== Processing Example ====");
         var bakery = new BakeryA();
 
-        // Envanter: 4 Wheat, 2 Egg
+        // Inventory including all products
         var inventory = new List<Product>
         {
             new Wheat(), new Wheat(), new Wheat(), new Wheat(),
-            new Egg(), new Egg()
+            new Egg(), new Egg(),
+            new Iron(),
+            new Steak(),
+            new Leather(),
+            new Milk()
         };
 
         bakery.DisplayInfo();
@@ -32,5 +66,12 @@ class Program
         Console.WriteLine("\nRemaining Inventory:");
         foreach (var item in inventory)
             Console.WriteLine($"- {item.Name}");
+
+        // Sample distance calculation
+        Console.WriteLine("\n==== Distance Information ====");
+        Console.WriteLine($"Distance between CityA and CityB: {cityA.Position.DistanceTo(cityB.Position)} km");
+        Console.WriteLine($"Distance between DairyA and CityA: {dairyA.Position.DistanceTo(cityA.Position)} km");
+        Console.WriteLine($"Distance between DairyB and CityB: {dairyB.Position.DistanceTo(cityB.Position)} km");
+        Console.WriteLine($"Distance between MineA and CityB: {mineA.Position.DistanceTo(cityB.Position)} km");
     }
 }

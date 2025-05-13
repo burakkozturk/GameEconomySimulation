@@ -11,6 +11,5 @@ namespace Game_Sim.Products
         public override double Volume => 0.02;
         public override bool IsPerishable => true;
         public override int ShelfLifeDays => 7;
-        public override double BasePrice => 2.5;
     }
 }
