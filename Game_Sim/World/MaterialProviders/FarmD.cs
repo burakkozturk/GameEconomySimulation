@@ -1,13 +1,17 @@
-﻿using Game_Sim.Model;
-using Game_Sim.Products;
-using Game_Sim.MaterialProvider;
+﻿using Game_Sim.MaterialProvider;
+using Game_Sim.Model;
 using Game_Sim.Products.Materials;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Game_Sim.World.MaterialProviders
 {
-    public class FarmB : Farm
+    public class FarmD : Farm
     {
-        public FarmB() : base("FarmB", new Position(-2, -4)) { }
+        public FarmD() : base("FarmD", new Position(3, 3)) { }
 
         public override List<Product> GetProducedGoods()
         {

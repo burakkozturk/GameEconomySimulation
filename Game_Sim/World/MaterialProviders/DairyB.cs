@@ -1,15 +1,16 @@
 ﻿using Game_Sim.Model;
 using Game_Sim.Products;
+using Game_Sim.Products.Materials;
 
 namespace Game_Sim.World.Producers
 {
     public class DairyB : Dairy
     {
-        public DairyB() : base("DairyB", new Position(6, 2.5)) { }
+        public DairyB() : base("DairyB", new Position(15, -3)) { }
 
         public override List<Product> GetProducedGoods()
         {
-            return new List<Product> { new Steak(), new Leather(), new Milk() };
+            return new List<Product> { new Mutton(), new Wool() };
         }
 
         public override void DisplayProductionInfo()

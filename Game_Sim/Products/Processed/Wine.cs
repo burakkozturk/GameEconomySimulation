@@ -1,6 +1,6 @@
 ﻿using Game_Sim.Model;
 
-namespace Game_Sim.Products
+namespace Game_Sim.Products.Processed
 {
     public class Wine : Product
     {

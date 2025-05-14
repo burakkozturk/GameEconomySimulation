@@ -1,10 +1,16 @@
 ﻿using Game_Sim.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Game_Sim.Products
+namespace Game_Sim.Products.Materials
 {
-    public class Steak : Product
+    public class Mutton : Product
     {
-        public override string Name => "Steak";
+
+        public override string Name => "Mutton";
         public override ProductCategory Category => ProductCategory.AnimalProduct;
 
         public override double Weight => 0.3;

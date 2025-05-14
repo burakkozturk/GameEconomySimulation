@@ -1,11 +1,12 @@
 ﻿using Game_Sim.Model;
 using Game_Sim.Products;
+using Game_Sim.Products.Materials;
 
 namespace Game_Sim.World.Producers
 {
     public class MineA : Mine
     {
-        public MineA() : base("MineA", new Position(4, 3)) { }
+        public MineA() : base("MineA", new Position(11, 3)) { }
 
         public override List<Product> GetProducedGoods()
         {

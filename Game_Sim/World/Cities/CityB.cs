@@ -2,7 +2,7 @@
 
 public class CityB : City
 {
-    public CityB() : base("CityB", 750, new Position(5, 3))
+    public CityB() : base("CityB", 750, new Position(13, 1))
     {
     }
 

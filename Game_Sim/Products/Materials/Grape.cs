@@ -1,6 +1,6 @@
 ﻿using Game_Sim.Model;
 
-namespace Game_Sim.Products
+namespace Game_Sim.Products.Materials
 {
     public class Grape : Product
     {
