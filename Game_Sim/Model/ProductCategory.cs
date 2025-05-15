@@ -6,6 +6,8 @@
         Crop,
         Tool,
         Material,
-        Luxury
+        Ore,
+        Wood,
+        Mineral
     }
 }

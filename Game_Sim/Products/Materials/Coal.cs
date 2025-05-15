@@ -11,6 +11,10 @@ namespace Game_Sim.Products.Materials
     {
         public override string Name => "Coal";
 
-        public override ProductCategory Category => ProductCategory.Material;
+        public override ProductCategory Category => ProductCategory.Ore;
+
+
+        public override double Weight => 15.0;
+        public override bool IsPerishable => false;
     }
 }

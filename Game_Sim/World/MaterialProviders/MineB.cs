@@ -10,7 +10,7 @@ namespace Game_Sim.World.MaterialProviders
 {
     public class MineB : Mine
     {
-        public MineB() : base("MineB", new Position(4, 5)) { }
+        public MineB() : base("MineB", new Position(6, 11)) { }
 
         public override List<Product> GetProducedGoods()
         {

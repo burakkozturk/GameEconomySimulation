@@ -12,5 +12,9 @@ namespace Game_Sim.Products.Materials
         public override string Name => "Olive";
 
         public override ProductCategory Category => ProductCategory.Crop;
+
+        public override double Weight => 0.5;
+        public override bool IsPerishable => true;
+        public override int ShelfLifeDays => 365;
     }
 }

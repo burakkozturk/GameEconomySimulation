@@ -10,7 +10,7 @@ namespace Game_Sim.World.MaterialProviders
 {
     public class MİneC : Mine
     {
-        public MİneC() : base("MineC", new Position(4,4)){ }
+        public MİneC() : base("MineC", new Position(10,16)){ }
 
         public override List<Product> GetProducedGoods()
         {

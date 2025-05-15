@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Game_Sim.Products.Materials
 {
-    public class Mutton : Product
+    public class Fish : Product
     {
+        public override string Name => "Fish";
 
-        public override string Name => "Mutton";
         public override ProductCategory Category => ProductCategory.AnimalProduct;
 
-        public override double Weight => 1;
+        public override double Weight => 0.8;
         public override bool IsPerishable => true;
-        public override int ShelfLifeDays => 4;
+        public override int ShelfLifeDays => 3;
     }
 }

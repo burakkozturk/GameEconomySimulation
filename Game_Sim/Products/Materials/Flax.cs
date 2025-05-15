@@ -13,9 +13,8 @@ namespace Game_Sim.Products.Materials
 
         public override ProductCategory Category => ProductCategory.Crop;
 
-        public override double Weight => 0.05;
-        public override double Volume => 0.02;
+        public override double Weight => 0.8;
         public override bool IsPerishable => true;
-        public override int ShelfLifeDays => 7;
+        public override int ShelfLifeDays => 180;
     }
 }

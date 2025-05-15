@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace Game_Sim.Products.Materials
 {
-    public class Salt : Product
+    public class Log : Product
     {
-        public override string Name => "Salt";
+        public override string Name => "Log";
 
-        public override ProductCategory Category => ProductCategory.Mineral;
+        public override ProductCategory Category => ProductCategory.Wood;
 
-        public override double Weight => 5.0;
+
+
+        public override double Weight => 75.0;
         public override bool IsPerishable => false;
     }
 }

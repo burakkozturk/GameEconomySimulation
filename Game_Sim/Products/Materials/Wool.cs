@@ -12,10 +12,11 @@ namespace Game_Sim.Products.Materials
         public override string Name => "Wool";
         public override ProductCategory Category => ProductCategory.AnimalProduct;
 
-        public override double Weight => 0.3;
-        public override double Volume => 0.2;
-        public override bool IsPerishable => false;
-        
+        public override double Weight => 8.0;
+        public override bool IsPerishable => true;
+
+        public override int ShelfLifeDays => 365;
+
 
     }
 }

@@ -7,8 +7,7 @@ namespace Game_Sim.Products.Materials
         public override string Name => "Leather";
         public override ProductCategory Category => ProductCategory.Material;
 
-        public override double Weight => 1.5;
-        public override double Volume => 0.8;
+        public override double Weight => 5;
         public override bool IsPerishable => false;
     }
 }
